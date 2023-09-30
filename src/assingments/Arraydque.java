@@ -16,7 +16,7 @@ public class Arraydque {
 			System.out.println("Adding elements using offer methods:"+arr1);
 			arr1.push("7 seventh elemet (head)");
 			System.out.println("Adding elements using push methods:"+arr1);
-			System.out.println("---------------------");
+			
 
 		}
 		public void removeMethods() {
