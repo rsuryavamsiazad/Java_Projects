@@ -47,6 +47,7 @@ public class Arraydque {
 			System.out.println("Retrives Tail element getlast method: "+arr1.getLast());
 			System.out.println("---------------------");
 		}
+		
 		public void otherMethods() {
 			System.out.println("Other methods:");
 			ArrayDeque<Integer> arr1 = new ArrayDeque<Integer>();
