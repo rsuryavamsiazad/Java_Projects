@@ -19,11 +19,11 @@ public class Merging2Array {
 			array3[i]=array1[i];
 		}
 		//so now we added the first array into the array3 using above loop
-		//now we need to add the second array2 but we need becarful with the index position
+		//now we need to add the second array2 but we need be careful with the index position
 		//the index position need to start from the end of array1.length
 		for (int i = 0; i < array2.length; i++) {
 			array3[array1.length+i]=array2[i];
-			//array3[array1.length+i] here we used this statment as we need to start the index position
+			//array3[array1.length+i] here we used this statement as we need to start the index position
 			//from the end of array1.length
 		}
 		
