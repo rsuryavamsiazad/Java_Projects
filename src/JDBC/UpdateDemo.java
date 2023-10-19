@@ -17,7 +17,5 @@ public class UpdateDemo {
 		if(result>0) System.out.println("Updated");
 		else System.out.println("Not Updated");
 
-
-
 	}
 }
