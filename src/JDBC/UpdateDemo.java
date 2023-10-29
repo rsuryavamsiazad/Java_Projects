@@ -13,11 +13,9 @@ public class UpdateDemo {
 		ps.setString(1, city1);
 		ps.setString(2, email1);
 
-		int result=	ps.executeUpdate();
+		int result=ps.executeUpdate();
 		if(result>0) System.out.println("Updated");
 		else System.out.println("Not Updated");
-
-
 
 	}
 }
