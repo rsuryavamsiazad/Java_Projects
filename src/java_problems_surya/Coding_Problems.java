@@ -83,7 +83,7 @@ public class Coding_Problems {
 						break;
 					}
 				}
-				Arrays.sort(odd);
+				Arrays.sort(odd);//with sorting here the elements become form[1,0,0] to [0,0,1] so we can push elements with out loss
 				Arrays.sort(even);
 			}
 			int largestEven = even[even.length-2];
@@ -91,12 +91,49 @@ public class Coding_Problems {
 			System.out.println(smallOdd+largestEven);
 		}
 	}
+	/**
+	 *  
+	 *  Perform the function: Int operationchoices(int c, int n, int a, int b). This 	function considers three positive inputs of a, b and c.
+	Execute the function to get:
+	(a + b), if c = 1
+	(a / b), if c = 4
+	(a – b), if c = 2
+	(a x b), if c = 3
 
+	Example:
+	Input:
+	a: 12
+	b: 16
+	c: 1
+	Output:
+	28
+	Explanation
+	C = 1, hence the function is (a + b). Hence, the output is 28.
+	Sample input:
+	a: 16
+	b: 20
+	c: 2
+	Sample output:
+	–4
+	 * 
+	 */
+
+	public int operationchoices(int c, int a, int b) {
+		
+		if(c==1) return a+b;
+		else if(c==4) return a/b;
+		else if(c==2) return a-b;
+		else if(c==3) return a*b;
+		else return 0;
+	
+	}
 	public static void main(String[] args) {
 		Coding_Problems obj = new Coding_Problems();
 		//		int result = obj.differenceofSum(10, 3);
 		//		System.out.println("this is a method result: "+result);
-		int arr[]= {3,2,1,7,5,4};
-		obj.LargeSmallSum(arr);
+		//		int arr[]= {3,2,1,7,5,4};
+		//		obj.LargeSmallSum(arr);
+		System.out.println(obj.operationchoices(1, 16, 12));
+		
 	}
 }
