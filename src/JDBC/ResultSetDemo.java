@@ -21,5 +21,6 @@ public class ResultSetDemo {
 			System.out.println("City:"+result.getString("city"));
 			System.out.println("---------------");
 		}
+		con.close();
 	}
 }
