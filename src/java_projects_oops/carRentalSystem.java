@@ -8,7 +8,7 @@ class Car{
 	private String carId ,brand,name,colour;
 	private double baseRatePerHour;//double beacuse of decimal value
 	private boolean isAvailable;
-	//lets create a parameterised constructor for the class rather than a method we can enter values directly rather than invoking a method
+	//lets create a parameterised constructor for the class rather than a method we can enter values directly 	rather than invoking a method
 	//we are not creating a default constructor again
 	public Car(String model,String brand,String name,double baseRatePerHour,String colour ) {
 		this.carId=model;

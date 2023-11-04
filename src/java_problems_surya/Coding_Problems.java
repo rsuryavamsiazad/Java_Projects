@@ -187,23 +187,23 @@ public class Coding_Problems {
 	 * @return String
 	 */
 	public String isAnagram(String s1,String s2) {
-		
-//		int lenght = s1.length(), check=0;
-//		for (int i = 0; i < s1.length(); i++) 
-//			for (int j = 0; j < s2.length(); j++) {
-//				if (s1.toLowerCase().charAt(i)==s2.toLowerCase().charAt(j)) check++;
-//			}
-//		if(check==lenght) return "Anagram";
-//		else return "Not Anagram";	
+
+		//		int lenght = s1.length(), check=0;
+		//		for (int i = 0; i < s1.length(); i++) 
+		//			for (int j = 0; j < s2.length(); j++) {
+		//				if (s1.toLowerCase().charAt(i)==s2.toLowerCase().charAt(j)) check++;
+		//			}
+		//		if(check==lenght) return "Anagram";
+		//		else return "Not Anagram";	
 		//another method
 		String a = s1.toLowerCase(), b = s2.toLowerCase();
 		char [] a1= a.toCharArray(),a2=b.toCharArray();
 		Arrays.sort(a1);
 		Arrays.sort(a2);
 		return Arrays.equals(a1, a2)?"Anagram":"Not Anagram";
-		
+
 	}
-	
+
 	/**
 	 * reverse a given string
 	 * @param s1
@@ -223,7 +223,7 @@ public class Coding_Problems {
 	 * @param s
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return String
 	 */
 	public String repalceChar(String s,char a,char b) {
 		char[] str = s.toCharArray();
@@ -238,22 +238,23 @@ public class Coding_Problems {
 		}
 		str[n1]=b;
 		str[n2]=a;
-		
+
 		return new String(str);
-		}
-	
+	}
+
 	public static void main(String[] args) {
 		Coding_Problems obj = new Coding_Problems();
-		//		int result = obj.differenceofSum(10, 3);
-		//		System.out.println("this is a method result: "+result);
-		//		int arr[]= {3,2,1,7,5,4};
-		//		obj.LargeSmallSum(arr);
-		//		System.out.println(obj.operationchoices(1, 16, 12));	
-		//		System.out.println(obj.calculate(12, 50));
-//				System.out.println(obj.isAnagram("Earth", "Heart"));
-//				System.out.println(obj.reverseString("Earth"));
-				System.out.println(obj.repalceChar("Shrek",'S','k'));
-		
+		/*		int result = obj.differenceofSum(10, 3);
+				System.out.println("this is a method result: "+result);
+				int arr[]= {3,2,1,7,5,4};
+				obj.LargeSmallSum(arr);
+				System.out.println(obj.operationchoices(1, 16, 12));	
+				System.out.println(obj.calculate(12, 50));
+				System.out.println(obj.isAnagram("Earth", "Heart"));
+				System.out.println(obj.reverseString("Earth"));  
+				*/
+		System.out.println(obj.repalceChar("Shrek",'S','k'));
+
 	}
-	
+
 }

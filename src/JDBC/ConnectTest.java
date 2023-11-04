@@ -55,7 +55,7 @@ public class ConnectTest {
 		if (i>0) {
 			System.out.println("saved to table node");
 		}
-		else System.out.println("error not sav");
+		else System.out.println("error not save");
 		//need to close connection and input stream after completion
 		con.close();
 		input.close();
